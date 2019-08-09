@@ -12,6 +12,7 @@ const ContactItem = ({ contact }) => {
     const { _id, name, email, phone, type } = contact;
 
     const onDelete = () => {
+        console.log("the id ---- ", _id)
         deleteContact(_id);
         clearCurrent();
     }

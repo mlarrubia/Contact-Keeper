@@ -32,12 +32,15 @@ const ContactForm = () => {
     const onSubmit = e => {
         e.preventDefault();
         if (current === null) {
+            console.log("INSIDE THE IF");
             addContact(contact)
         } else {
+            console.log("this is the contact")
+            console.log(contact)
             updateContact(contact);
         }
 
-        contactContext.addContact(contact);
+        // contactContext.addContact(contact);
         setContact({
             name: '',
             email: '',
